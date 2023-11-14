@@ -1,10 +1,10 @@
 import React from "react"
-import User from 
 
 export default function User ({ id, name, username, email, age }){
     return (
         <div style={{ display: 'flex', marginBottom: '10px' }}>
             <div style={{ marginRight: '10px' }}>{id}</div>
+            <div style={{ marginRight: '10px' }}>{name}</div>
             <div style={{ marginRight: '10px' }}>{username}</div>
             <div style={{ marginRight: '10px' }}>{email}</div>
             <div>{age}</div>
