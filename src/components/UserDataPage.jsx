@@ -13,9 +13,9 @@ export default function User ({ id, username, email, age }){
 export default function UserDataPage() {
     
     const userData = [
-        { id: 1, username: 'User1', email: 'user1@example.com', age: 28 },
-        { id: 2, username: 'User2', email: 'user2@example.com', age: 35 },
-        { id: 3, username: 'User3', email: 'user3@example.com', age: 42 },
+        { id: 1, name: 'Emil', username: 'User1', email: 'user1@example.com', age: 28 },
+        { id: 2, name: 'Benja', username: 'User2', email: 'user2@example.com', age: 35 },
+        { id: 3, name: 'Sham', username: 'User3', email: 'user3@example.com', age: 42 },
     ];
 
     return (
@@ -25,6 +25,7 @@ export default function UserDataPage() {
                 <User 
                     key={user.id} 
                     id={user.id} 
+                    emil={user.name}
                     username={user.username} 
                     email={user.email} 
                     age={user.age} 
