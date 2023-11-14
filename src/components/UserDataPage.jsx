@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function User ({ id, username, email, age }){
+export default function User ({ id, name, username, email, age }){
     return (
         <div style={{ display: 'flex', marginBottom: '10px' }}>
             <div style={{ marginRight: '10px' }}>{id}</div>
@@ -10,7 +10,7 @@ export default function User ({ id, username, email, age }){
         </div>
     );
 
-export default function UserDataPage() {
+function UserDataPage( id, user) {
     
     const userData = [
         { id: 1, name: 'Emil', username: 'User1', email: 'user1@example.com', age: 28 },
