@@ -9,15 +9,14 @@ export default function UserForm() {
   const handleSubmit = async e => {
     e.preventDefault();
     const user = { name, username, mail, age };
-
+    console.log(user);
     resetForm();
 
-    await fetch("http://localhost:3000/newuser"),
-      {
-        method: "POST",
-        headers: { "Content-type": "application/json" },
-        body: JSON.stringify(user),
-      };
+    await fetch("http://localhost:3000/newuser", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(user),
+    });
   };
 
   function resetForm() {
