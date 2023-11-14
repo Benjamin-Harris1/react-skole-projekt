@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 
+/*eslint-disable react/prop-types */
+
 export default function Table({ data }) {
   console.log("Received data prop in Table component:", data);
 
@@ -16,7 +18,7 @@ export default function Table({ data }) {
           </tr>
         </thead>
         <tbody>
-          {data.map((user) => (
+          {data.map(user => (
             <tr key={user.id}>
               <td>{user.id}</td>
               <td>{user.name}</td>
