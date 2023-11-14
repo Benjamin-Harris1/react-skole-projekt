@@ -36,3 +36,11 @@ body {
   align-items: center;
   height: 100vh;
 }
+
+.newuser {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
