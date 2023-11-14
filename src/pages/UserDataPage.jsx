@@ -3,7 +3,7 @@ import Users from "../components/Users";
 export default function UserDataPage() {
   return (
     <div className="UserDataPage">
-      <h1>Her er vores brugere</h1>
+      <h1>Users</h1>
       <Users />
     </div>
   );

@@ -28,3 +28,11 @@ body {
   top: 0;
   left: 0;
 }
+
+.UserDataPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
