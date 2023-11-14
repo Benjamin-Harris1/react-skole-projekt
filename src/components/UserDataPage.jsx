@@ -1,7 +1,6 @@
 import React from "react"
-import User from 
 
-export default function User ({ id, username, email, age}){
+export default function User ({ id, username, email, age }){
     return (
         <div style={{ display: 'flex', marginBottom: '10px' }}>
             <div style={{ marginRight: '10px' }}>{id}</div>
