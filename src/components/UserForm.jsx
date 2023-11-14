@@ -12,7 +12,7 @@ export default function UserForm() {
 
     resetForm();
 
-    await fetch(""),
+    await fetch("http://localhost:3000/newuser"),
       {
         method: "POST",
         headers: { "Content-type": "application/json" },
@@ -26,4 +26,49 @@ export default function UserForm() {
     setMail("");
     setAge("");
   }
+
+  return (
+    <>
+      <h2>User Form</h2>
+      <form onSubmit={handleSubmit}>
+        <label>
+          Name:
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </label>
+        <br />
+        <label>
+          Username:
+          <input
+            type="text"
+            value={username}
+            onChange={(e) => setUserName(e.target.value)}
+          />
+        </label>
+        <br />
+        <label>
+          Email:
+          <input
+            type="email"
+            value={mail}
+            onChange={(e) => setMail(e.target.value)}
+          />
+        </label>
+        <br />
+        <label>
+          Age:
+          <input
+            type="number"
+            value={age}
+            onChange={(e) => setAge(e.target.value)}
+          />
+        </label>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </>
+  );
 }
