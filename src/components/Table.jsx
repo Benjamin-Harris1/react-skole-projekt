@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 
 export default function Table({ data }) {
   return (
@@ -14,7 +14,7 @@ export default function Table({ data }) {
           </tr>
         </thead>
         <tbody>
-          {data.map((user) => (
+          {data.map(user => (
             <tr key={user.id}>
               <td>{user.id}</td>
               <td>{user.name}</td>
