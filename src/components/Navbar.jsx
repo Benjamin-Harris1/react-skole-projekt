@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav className="Navbar">
       <NavLink to="/">Hjem</NavLink>
       <NavLink to="/users">Brugere</NavLink>
-      <NavLink to="/">Tilføj brugere</NavLink>
+      <NavLink to="/newuser">Tilføj brugere</NavLink>
     </nav>
   );
 }

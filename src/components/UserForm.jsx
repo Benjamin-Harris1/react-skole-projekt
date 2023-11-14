@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function UserForm() {
   const [name, setName] = useState("");
@@ -6,7 +6,7 @@ export default function UserForm() {
   const [mail, setMail] = useState("");
   const [age, setAge] = useState("");
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async e => {
     e.preventDefault();
     const user = { name, username, mail, age };
 
@@ -33,38 +33,22 @@ export default function UserForm() {
       <form onSubmit={handleSubmit}>
         <label>
           Name:
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
+          <input type="text" value={name} onChange={e => setName(e.target.value)} />
         </label>
         <br />
         <label>
           Username:
-          <input
-            type="text"
-            value={username}
-            onChange={(e) => setUserName(e.target.value)}
-          />
+          <input type="text" value={username} onChange={e => setUserName(e.target.value)} />
         </label>
         <br />
         <label>
           Email:
-          <input
-            type="email"
-            value={mail}
-            onChange={(e) => setMail(e.target.value)}
-          />
+          <input type="email" value={mail} onChange={e => setMail(e.target.value)} />
         </label>
         <br />
         <label>
           Age:
-          <input
-            type="number"
-            value={age}
-            onChange={(e) => setAge(e.target.value)}
-          />
+          <input type="number" value={age} onChange={e => setAge(e.target.value)} />
         </label>
         <br />
         <button type="submit">Submit</button>
